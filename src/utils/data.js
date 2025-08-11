@@ -72,7 +72,7 @@ export const SKILLS_CATEGORY = [
             { name: "Git", level: 90, color: "bg-orange-700" },
             { name: "CI/CD", level: 75, color: "bg-purple-500" },
             { name: "Render", level: 80, color: "bg-indigo-500" },
-            { name: "TiDB", level: 50, color: "bg-grey-900" },
+            { name: "TiDB", level: 50, color: "bg-yellow-900" },
         ],
     },
 ]
@@ -91,62 +91,18 @@ export const TECH_STACK = [
 ];
 
 export const STATS = [
-    { number: "20+", label: "Projects Completed" },
-    { number: "1+", label: "Years of Experience" },
-    { number: "10+", label: "Technologies" },
-    { number: "100%", label: "Client Satisfaction" },
+    { number: "15+", label: "Projects Completed (Training)" },
+    { number: "2", label: "Year of Training" },
+    { number: "10+", label: "Technologies Learned" },
+    { number: "100%", label: "Training Completion Rate" },
 ]
 
 export const PROJECTS = [
     {
         id: 1,
-        title: "Recipe Sharing Platform",
-        description: "A recipe sharing app using React, CSS, Node.js, Express, JavaScript, CI/CD integrated",
-        image: PROJECT_IMG1,
-        tags: ["React", "Node.js", "MySQL"],
-        liveUrl: "https://elizbeh.github.io/savorly-frontend",
-        githubUrl: "a",
-        featured: false,
-        category: "Web App",
-    },
-    {
-        id: 2,
-        title: "E-commerce platform using MERN stack",
-        description: "An e-commerce app for furniture sales with payments via Stripe and image management via Cloudinary",
-        image: PROJECT_IMG2,
-        tags: ["MongoDB", "Express", "React", "Node.js"],
-        liveUrl: "#",
-        githubUrl: "a",
-        featured: false,
-        category: "Web App",
-    },
-    {
-        id: 3,
-        title: "HabitWise",
-        description: "Mobile app for personal and collective goal tracking with real-time sync via Firebase, built with Flutter and Provider",
-        image: PROJECT_IMG3,
-        tags: ["Flutter", "Firebase", "Dart"],
-        liveUrl: "#",
-        githubUrl: "a",
-        featured: false,
-        category: "Mobile App",
-    },
-    {
-        id: 4,
-        title: "Holbegram",
-        description: "Mobile app to upload and share images in a school project using Flutter and Firebase",
-        image: PROJECT_IMG4,
-        tags: ["Flutter", "Firebase", "Dart"],
-        liveUrl: "#",
-        githubUrl: "a",
-        featured: false,
-        category: "Mobile App",
-    },
-    {
-        id: 5,
         title: "Savorly",
-        description: "Full-stack recipe sharing app using React, Node.js, MySQL; deployed on GitHub Pages, Render, and TiDB Cloud",
-        image: PROJECT_IMG5,
+        description: "Full-stack recipe sharing app using React, Node.js, MySQL; deployed on GitHub Pages, Render, and TiDB Cloud.",
+        image: PROJECT_IMG1,
         tags: ["React", "Node.js", "MySQL"],
         liveUrl: "https://elizbeh.github.io/savorly-frontend",
         githubUrl: "a",
@@ -154,10 +110,21 @@ export const PROJECTS = [
         category: "Web App",
     },
     {
-        id: 6,
+        id: 2,
+        title: "HabitWise",
+        description: "Mobile app for personal and collective goal tracking with real-time sync via Firebase, built with Flutter and Provider.",
+        image: PROJECT_IMG2,
+        tags: ["Flutter", "Firebase", "Dart"],
+        liveUrl: "#",
+        githubUrl: "a",
+        featured: false,
+        category: "Mobile App",
+    },
+    {
+        id: 3,
         title: "Gabbeth Interiors",
-        description: "E-commerce platform for furniture sales with Stripe payment integration and Cloudinary for image management",
-        image: PROJECT_IMG6,
+        description: "E-commerce platform for furniture sales with Stripe payment integration and Cloudinary for image management.",
+        image: PROJECT_IMG3,
         tags: ["React", "Node.js", "Stripe", "Cloudinary"],
         liveUrl: "#",
         githubUrl: "a",
@@ -165,102 +132,90 @@ export const PROJECTS = [
         category: "Web App",
     },
     {
-        id: 7,
-        title: "Recipe Sharing Platform (Duplicate)",
-        description: "A recipe sharing app using React, CSS, Node.js, Express, JavaScript, CI/CD integrated",
-        image: PROJECT_IMG7,
-        tags: ["React", "Node.js", "MySQL"],
-        liveUrl: "https://elizbeh.github.io/savorly-frontend",
+        id: 4,
+        title: "Portfolio Website",
+        description: "Personal portfolio showcasing projects, skills, and development journey.",
+        image: PROJECT_IMG4,
+        tags: ["React", "CSS", "JavaScript"],
+        liveUrl: "#",
         githubUrl: "a",
         featured: false,
         category: "Web App",
     },
-]
+    {
+    id: 5,
+    title: "Smiling School Website",
+    description: "A simple, static website built with HTML and CSS showcasing basic web design skills.",
+    image: PROJECT_IMG7, 
+    tags: ["HTML", "CSS"],
+    liveUrl: "#",
+    githubUrl: "a",
+    featured: false,
+    category: "Web App",
+},
+
+];
+
 
 export const JOURNEY_STEPS = [
-    {
-        year: "2001 - 2007",
-        title: "Secondary School Leaving Certificate",
-        Company: "Army Day Secondary School, Owode, Nigeria",
-        description: "Completed secondary education laying foundational skills.",
-        icon: GraduationCap,
-        color: "bg-blue-500"
-    },
     {
         year: "2009 - 2014",
         title: "Bachelor of Arts (French)",
         Company: "Ambrose Alli University, Ekpoma, Nigeria",
-        description: "Graduated with a BA in French, providing strong language and communication skills.",
+        description: "Earned a BA in French, developing strong communication, research, and analytical skills.",
         icon: GraduationCap,
         color: "bg-blue-500"
     },
     {
-        year: "2015 - 2016",
-        title: "French Teacher - National Youth Service Corps",
-        Company: "Abraka, Delta, Nigeria",
-        description: "Taught French, developing communication and leadership skills.",
-        icon: Briefcase,
-        color: "bg-green-500"
+    year: "2015 - 2016",
+    title: "French Teacher – National Youth Service Corps",
+    Company: "Abraka, Delta, Nigeria",
+    description: "Taught French language classes, developing strong communication, leadership, and adaptability skills in a dynamic environment.",
+    icon: Briefcase,
+    color: "bg-green-500"
     },
-    {
-        year: "2012 (Aug - Nov)",
-        title: "Internship - English Tutor",
-        Company: "AIESEC Abidjan, Côte d'Ivoire",
-        description: "Tutored English, enhancing teaching and interpersonal skills.",
-        icon: Briefcase,
-        color: "bg-green-500"
-    },
+
     {
         year: "2022 - 2024",
-        title: "Concepteur Développeur d’applications (in progress)",
+        title: "Full-Stack Developer Training",
         Company: "Holberton School Paris, France",
-        description: "Full-stack developer training, acquiring solid software development fundamentals and practical project experience.",
+        description: "Completed two-year program: Year 1 in Computer Science Fundamentals, Year 2 in Full-Stack Development",
         icon: Code2,
         color: "bg-blue-700"
     },
     {
-        year: "2023",
-        title: "Started Coding Journey",
-        Company: "Holberton School",
-        description: "Began learning computer fundamentals with C, Python, HTML, CSS, JavaScript.",
-        icon: Code2,
-        color: "bg-blue-500"
-    },
-    {
-        year: "2024",
-        title: "Fullstack Specialization",
-        Company: "Holberton School",
-        description: "Specialized in full-stack development.",
-        icon: Code2,
-        color: "bg-blue-500"
-    },
-    {
-        year: "2025",
-        title: "Certified Application Designer Developer (RNCP)",
-        Company: "RNCP",
-        description: "Achieved certification equivalent to a Bachelor's degree.",
-        icon: Award,
-        color: "bg-blue-700"
-    },
-]
+    year: "2025",
+    title: "RNCP Niveau 6 – Concepteur Développeur d’Applications",
+    Company: "France Compétences",
+    description: "Completed Holberton full-stack specialization and prepared for the official RNCP state certification exam.",
+    icon: Award,
+    color: "bg-blue-500"
+}
+
+];
+
+
+
 
 export const PASSIONS = [
     {
-        icon: Heart,
-        title: "User Experience",
-        description: "Crafting intuitive interfaces that users love",
+    icon: Heart,
+    title: "User Experience",
+    description: "Creating intuitive and user-friendly interfaces",
     },
+
     {
         icon: Coffee,
         title: "Problem Solving",
-        description: "Turning complex challenges into elegant solutions",
+        description: "Eager to tackle challenges with thoughtful and practical solutions",
     },
     {
         icon: BookOpen,
         title: "Continuous Learning",
-        description: "Always exploring new technologies and best practices",
+        description: "Committed to growing skills by exploring new technologies and best practices",
     },
 ];
+
 
 export const SOCIAL_LINKS = [
     {

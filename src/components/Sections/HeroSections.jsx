@@ -92,9 +92,9 @@ export const HeroSections = () => {
 
               <motion.h1 variants={containerVariants} className="text-3xl md:text-5xl font-light mb-6 leading-tight">
                 <span>
-                  Building digital <span className="text-purple-500 font-medium">experiences</span>
+                  Bringing digital  <span className="text-purple-500 font-medium">experiences</span>
                   <br />
-                  <span className={isDarkMode ? "text-white" : "text-gray-900"}>that matter</span>
+                  <span className={isDarkMode ? "text-white" : "text-gray-900"}>to life</span>
                 </span>
               </motion.h1>
 
@@ -208,7 +208,7 @@ export const HeroSections = () => {
 
               <motion.div
                 whileHover={{ scale: 1.02 }}
-                className={`w-80 h-96 rounded-3xl overflow-hidden border-4 ${
+                className={`w-80 h-80 rounded-3xl overflow-hidden border-4 ${
                   isDarkMode ? "border-gray-800" : "border-gray-300"
                 } shadow-2xl`}
               >
@@ -236,6 +236,19 @@ export const HeroSections = () => {
           >
             <ArrowDown size={20} className={isDarkMode ? "text-gray-600" : "text-gray-400"} />
           </motion.div>
+          <motion.div
+  initial={{ opacity: 0, y: 10 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.5 }}
+  className={`mt-6 flex justify-center space-x-6 ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}
+>
+  {["React", "Node.js", "TypeScript", "MongoDB"].map((tech) => (
+    <span key={tech} className="text-sm font-medium">
+      {tech}
+    </span>
+  ))}
+</motion.div>
+
         </div>
       </motion.section>
     </div>

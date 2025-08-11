@@ -59,7 +59,7 @@ const SkillsSection = () => {
             variants={itemsVariants}
             className={`text-lg ${isDarkMode ? "text-gray-400" : "text-gray-600"} max-w-2xl mx-auto font-light`}
           >
-            A comprehensive toolkit for building modern, scalable web applications from concept to deployment.
+            A comprehensive toolkit for designing and deploying modern, scalable web applications from concept to production.
           </motion.p>
         </motion.div>
 

@@ -60,7 +60,7 @@ const ProjectsSection = () => {
               isDarkMode ? "text-gray-400" : "text-gray-600"
             } max-w-2xl mx-auto font-light`}
           >
-            A collection of projects that showcase my expertise in building modern web applications and solving complex problems.
+            A showcase of projects demonstrating my developing skills in building modern web applications and solving problems
           </motion.p>
         </motion.div>
 
@@ -69,7 +69,7 @@ const ProjectsSection = () => {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={containerVariants}
-          className="grid  grid-cols-1 md:grid-cols-2   gap-3 lg:gap-8"
+          className="grid  grid-cols-1 md:grid-cols-2  gap-3 lg:gap-8"
         >
           {PROJECTS.map((project, index) => (
             <ProjectCards
