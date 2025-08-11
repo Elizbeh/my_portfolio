@@ -103,7 +103,8 @@ export const HeroSections = () => {
               </motion.p>
 
               <motion.div variants={itemsVariants} className="flex flex-col space-y-4 items-center">
-                <motion.button whileHover={{ y: -2 }} onClick={() => scrollToSection("work")} className="text-sm uppercase tracking-wider font-medium">
+                <motion.button whileHover={{ y: -2 }} onClick={() => scrollToSection("work")}
+                  className="bg-purple-700 py-3 px-8 text-white rounded-full uppercase tracking-widest">
                   View Work
                 </motion.button>
                 <motion.button

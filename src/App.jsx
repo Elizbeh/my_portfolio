@@ -5,6 +5,8 @@ import { HeroSections } from './components/Sections/HeroSections'
 import SkillsSection  from './components/Sections/SkillsSection'
 import ProjectsSection from './components/Sections/ProjectsSection'
 import AboutSection from './components/Sections/AboutSection'
+import ContactSession from './components/Sections/ContactSession'
+import Footer from './components/Sections/Footer'
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
         <SkillsSection/>
         <ProjectsSection/>
         <AboutSection/>
+        <ContactSession/>
+        <Footer/>
       </div>
     </ThemeProvider>
   )

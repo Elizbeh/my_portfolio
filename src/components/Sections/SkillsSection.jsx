@@ -33,7 +33,7 @@ const SkillsSection = () => {
     <section
       ref={sectionRef}
       id="skills"
-      className={`py-24 px-6 ${isDarkMode ? "bg-gray-950 text-white" : "bg-gray-50 text-gray-900"} relative overflow-hidden`}
+      className={`py-4 px-6 ${isDarkMode ? "bg-gray-950 text-white" : "bg-gray-50 text-gray-900"} relative overflow-hidden`}
     >
       {/* Section Header */}
       <div className="max-w-6xl mx-auto relative z-10">
