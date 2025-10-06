@@ -19,14 +19,11 @@ const ProjectCards = ({ project, index, isDarkMode }) => {
   return (
     <motion.div
       variants={cardVariants}
-      whileHover={{
-        y: -8,
-        transition: { duration: 0.3, ease: "easeInOut" },
-      }}
-      className="group relative"
+      whileHover={{ y: -8, transition: { duration: 0.3, ease: "easeInOut" } }}
+      className="group relative w-full"
     >
       <div
-        className={`rounded-2xl overflow-hidden border transition-all duration-500 ${
+        className={`rounded-2xl overflow-hidden border w-full ${
           isDarkMode
             ? "bg-gray-900/50 border-gray-800 hover:border-gray-700 hover:shadow-2xl hover:shadow-purple-500/10"
             : "bg-white/80 border-gray-200 hover:border-gray-300 hover:shadow-2xl hover:shadow-purple-500/10"
@@ -37,7 +34,7 @@ const ProjectCards = ({ project, index, isDarkMode }) => {
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-100"
+            className="w-full h-auto object-cover"
           />
 
           {/* Featured Badge */}
