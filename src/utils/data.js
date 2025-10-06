@@ -33,7 +33,7 @@ export const SKILLS_CATEGORY = [
         description: "Crafting beautiful, responsive user interfaces",
         skills: [
             { name: "React", level: 80, color: "bg-purple-500" },
-            { name: "TypeScript", level: 70, color: "bg-blue-600" },
+            { name: "TypeScript", level: 60, color: "bg-blue-600" },
             { name: "HTML", level: 85, color: "bg-green-800" },
             { name: "Tailwind CSS", level: 80, color: "bg-cyan-500" },
             { name: "Framer Motion", level: 50, color: "bg-pink-500" },
@@ -59,8 +59,8 @@ export const SKILLS_CATEGORY = [
             { name: "MongoDB", level: 80, color: "bg-green-500" },
             { name: "Mysql", level: 80, color: "bg-blue-700" },
             { name: "Redis", level: 50, color: "bg-red-500" },
-            { name: "Firebase", level: 80, color: "bg-indigo-500" },
-            { name: "TiDB", level: 50, color: "bg-yellow-600" },
+            { name: "Firebase", level: 60, color: "bg-indigo-500" },
+            { name: "TiDB", level: 60, color: "bg-yellow-600" },
         ],
     },
     {
@@ -68,9 +68,9 @@ export const SKILLS_CATEGORY = [
         icon: Cloud,
         description: "Deploying and scaling applications",
         skills: [
-            { name: "Docker", level: 80, color: "bg-blue-600" },
-            { name: "Git", level: 90, color: "bg-orange-700" },
-            { name: "CI/CD", level: 75, color: "bg-purple-500" },
+            { name: "Docker", level: 70, color: "bg-blue-600" },
+            { name: "Git", level: 80, color: "bg-orange-700" },
+            { name: "CI/CD", level: 70, color: "bg-purple-500" },
             { name: "Render", level: 80, color: "bg-indigo-500" },
             { name: "TiDB", level: 50, color: "bg-yellow-900" },
         ],
@@ -86,8 +86,11 @@ export const TECH_STACK = [
     "Jest",
     "Cypress",
     "Figma",
-    "Notion",
+    "canva",
     "Slack",
+    "Trello",
+    "Lucidchart",
+
 ];
 
 export const STATS = [
@@ -116,7 +119,7 @@ export const PROJECTS = [
         image: PROJECT_IMG2,
         tags: ["Flutter", "Firebase", "Dart"],
         liveUrl: "#",
-        githubUrl: "a",
+        githubUrl: "https://github.com/Elizbeh/habitwise",
         featured: false,
         category: "Mobile App",
     },
@@ -138,21 +141,46 @@ export const PROJECTS = [
         image: PROJECT_IMG4,
         tags: ["React", "CSS", "JavaScript"],
         liveUrl: "#",
-        githubUrl: "a",
+        githubUrl: "https://github.com/Elizbeh/my_portfolio",
         featured: false,
         category: "Web App",
     },
-    {
+   {
     id: 5,
-    title: "Smiling School Website",
-    description: "A simple, static website built with HTML and CSS showcasing basic web design skills.",
-    image: PROJECT_IMG7, 
-    tags: ["HTML", "CSS"],
-    liveUrl: "#",
-    githubUrl: "a",
+    title: "Color Scheme Generator",
+    description: "A web app that generates color palettes based on a selected color and mode. Users can copy hex codes to use in their designs.",
+    image: PROJECT_IMG5,
+    tags: ["HTML", "CSS", "JavaScript", "API"],
+    liveUrl: "https://color-scheme-master.netlify.app/",
+    githubUrl: "https://github.com/Elizbeh/color-scheme-master",
     featured: false,
     category: "Web App",
 },
+{
+    id: 6,
+    title: "Game of War",
+    description: "A web-based card game where players compete against the computer by drawing cards. Scores are tracked and the game announces round and overall winners.",
+    image: PROJECT_IMG6,
+    tags: ["HTML", "CSS", "JavaScript", "API"],
+    liveUrl: "https://your-netlify-link.netlify.app/",
+    githubUrl: "https://github.com/Elizbeh/game-of-war",
+    featured: false,
+    category: "Web App",
+},
+
+    {
+    id: 7,
+    title: "Meme Picker",
+    description: "A web app that lets users select their current emotion and fetch a meme or GIF that matches it. Includes options to filter for animated GIFs only.",
+    image: PROJECT_IMG7,
+    tags: ["HTML", "CSS", "JavaScript",],
+    liveUrl: "https://meme-picker0.netlify.app/",
+    githubUrl: "https://github.com/Elizbeh/meme_picker",
+    featured: false,
+    category: "Web App",
+},
+
+
 
 ];
 
@@ -221,21 +249,21 @@ export const SOCIAL_LINKS = [
     {
         name: "GitHub",
         icon: FiGithub,
-        url: "https://github.com/elizbeh",
+        url: "https://github.com/Elizbeh",
         color: "hover:text-gray-400",
         bgColor: "hover:bg-gray-800",
     },
     {
         name: "LinkedIn",
         icon: FiLinkedin,
-        url: "https://linkedin.com/in/elizbeh",
+        url: "https://www.linkedin.com/in/elizabeth-behaghel/",
         color: "hover:text-gray-400",
         bgColor: "hover:bg-gray-800",
     },
     {
         name: "Twitter",
         icon: FiTwitter,
-        url: "https://twitter.com/elizbeh",
+        url: "#",
         color: "hover:text-gray-400",
         bgColor: "hover:bg-gray-800",
     },

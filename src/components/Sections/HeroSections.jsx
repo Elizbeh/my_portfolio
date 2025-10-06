@@ -5,6 +5,7 @@ import { FiGithub, FiLinkedin } from 'react-icons/fi';
 import { useTheme } from '../../context/ThemeContext';
 import PROFILE_PIC from '../../assets/images/profile.jpg';
 import { containerVariants, itemsVariants } from '../../utils/helper';
+import { SOCIAL_LINKS } from "../../utils/data";
 
 
 export const HeroSections = () => {
@@ -122,21 +123,24 @@ export const HeroSections = () => {
               </motion.div>
 
               <motion.div variants={itemsVariants} className="flex justify-center space-x-4 mt-6">
-                {[{ icon: FiGithub, href: "#" }, { icon: FiLinkedin, href: "#" }, { icon: Mail, href: "#" }].map((social, i) => (
-                  <motion.a
-                    key={i}
-                    href={social.href}
-                    whileHover={{ y: -3, scale: 1.1 }}
-                    className={`p-3 rounded-full transition-colors ${
-                      isDarkMode
-                        ? "text-gray-400 hover:text-white hover:bg-gray-800"
-                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
-                    }`}
-                  >
-                    <social.icon size={20} />
-                  </motion.a>
-                ))}
-              </motion.div>
+              {SOCIAL_LINKS.map((social, i) => (
+                <motion.a
+                  key={i}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ y: -3, scale: 1.1 }}
+                  className={`p-3 rounded-full transition-colors ${
+                    isDarkMode
+                      ? "text-gray-400 hover:text-white hover:bg-gray-800"
+                      : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
+                  }`}
+                >
+                  <social.icon size={20} />
+                </motion.a>
+              ))}
+            </motion.div>
+
             </motion.div>
           </div>
 
@@ -178,20 +182,23 @@ export const HeroSections = () => {
               </motion.div>
 
               <motion.div variants={itemsVariants} className="flex space-x-6 mb-10">
-                {[{ icon: FiGithub, href: "#" }, { icon: FiLinkedin, href: "#" }, { icon: Mail, href: "#" }].map((social, i) => (
-                  <motion.a
-                    key={i}
-                    href={social.href}
-                    whileHover={{ y: -3, scale: 1.1 }}
-                    className={`p-3 rounded-full transition-colors ${
-                      isDarkMode
-                        ? "text-gray-400 hover:text-white hover:bg-gray-800"
-                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
-                    }`}
-                  >
-                    <social.icon size={20} />
-                  </motion.a>
-                ))}
+                {SOCIAL_LINKS.map((social, i) => (
+  <motion.a
+    key={i}
+    href={social.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ y: -3, scale: 1.1 }}
+    className={`p-3 rounded-full transition-colors ${
+      isDarkMode
+        ? "text-gray-400 hover:text-white hover:bg-gray-800"
+        : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
+    }`}
+  >
+    <social.icon size={20} />
+  </motion.a>
+))}
+
               </motion.div>
             </motion.div>
 

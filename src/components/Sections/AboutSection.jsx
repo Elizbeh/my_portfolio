@@ -123,14 +123,14 @@ const AboutSection = () => {
                   isDarkMode ? "text-gray-300" : "text-gray-700"
                 }`}
               >
-                I see technology as a powerful tool to connect people and solve real problems. I’m passionate about creating digital experiences that are not only useful but also enjoyable and accessible to everyone.
+                I’m passionate about using technology to solve real problems and create digital experiences that are useful, enjoyable, and accessible. Through hands-on projects, I’ve honed my ability to turn ideas into practical solutions, whether working independently or collaborating with a team.
               </p>
               <p
                 className={`text-lg leading-relaxed mb-6 ${
                   isDarkMode ? "text-gray-400" : "text-gray-600"
                 }`}
               >
-                When I’m not coding, I enjoy exploring new frameworks, contributing to open source, and supporting other developers on their journey. I love how web technologies constantly evolve, opening up endless possibilities to build meaningful, user-centered solutions.
+               I thrive on learning, exploring new tools, and building meaningful, user-centered solutions that connect people and make a real impact. When I’m not coding, I enjoy experimenting with new frameworks and exploring the endless possibilities web technologies offer to create engaging digital experiences.
               </p>
 
               {/* What I Love Building */}
