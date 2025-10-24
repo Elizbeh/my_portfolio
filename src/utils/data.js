@@ -14,9 +14,10 @@ import {
     Mail,
     MapPin,
     Phone,
+    Globe,
 } from "lucide-react"
 
-import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 import PROJECT_IMG1 from "../assets/images/project1.png"
 import PROJECT_IMG2 from "../assets/images/project2.png"
@@ -34,7 +35,7 @@ export const SKILLS_CATEGORY = [
         skills: [
             { name: "React", level: 80, color: "bg-purple-500" },
             { name: "TypeScript", level: 60, color: "bg-blue-600" },
-            { name: "HTML", level: 85, color: "bg-green-800" },
+            { name: "HTML", level: 90, color: "bg-green-800" },
             { name: "Tailwind CSS", level: 80, color: "bg-cyan-500" },
             { name: "Framer Motion", level: 50, color: "bg-pink-500" },
         ],
@@ -53,7 +54,7 @@ export const SKILLS_CATEGORY = [
     },
     {
         title: "Database",
-        icon: Code2,
+        icon: Database,
         description: "Managing and optimising data storage",
         skills: [
             { name: "MongoDB", level: 80, color: "bg-green-500" },
@@ -94,7 +95,7 @@ export const TECH_STACK = [
 ];
 
 export const STATS = [
-    { number: "15+", label: "Projects Completed (Training)" },
+    { number: "8+", label: "Web Development Projects" },
     { number: "2", label: "Year of Training" },
     { number: "10+", label: "Technologies Learned" },
     { number: "100%", label: "Training Completion Rate" },
@@ -108,7 +109,7 @@ export const PROJECTS = [
         image: PROJECT_IMG1,
         tags: ["React", "Node.js", "MySQL"],
         liveUrl: "https://elizbeh.github.io/savorly-frontend",
-        githubUrl: "a",
+        githubUrl: "https://github.com/Elizbeh/Savorly",
         featured: true,
         category: "Web App",
     },
@@ -118,7 +119,7 @@ export const PROJECTS = [
         description: "Mobile app for personal and collective goal tracking with real-time sync via Firebase, built with Flutter and Provider.",
         image: PROJECT_IMG2,
         tags: ["Flutter", "Firebase", "Dart"],
-        liveUrl: "#",
+        liveUrl: "https://1drv.ms/v/c/d95f96af380c24d0/EdAkDDivll8ggNnFdh4AAAABI0S_fWNxg4Jb-EiH6XmDKQ?e=vcZ5Ds",
         githubUrl: "https://github.com/Elizbeh/habitwise",
         featured: false,
         category: "Mobile App",
@@ -208,7 +209,7 @@ export const JOURNEY_STEPS = [
         title: "Full-Stack Developer Training",
         Company: "Holberton School Paris, France",
         description: "Completed two-year program: Year 1 in Computer Science Fundamentals, Year 2 in Full-Stack Development",
-        icon: Code2,
+        icon: Rocket,
         color: "bg-blue-700"
     },
     {
@@ -260,13 +261,7 @@ export const SOCIAL_LINKS = [
         color: "hover:text-gray-400",
         bgColor: "hover:bg-gray-800",
     },
-    {
-        name: "Twitter",
-        icon: FiTwitter,
-        url: "#",
-        color: "hover:text-gray-400",
-        bgColor: "hover:bg-gray-800",
-    },
+    
     {
         name: "Email",
         icon: Mail,
@@ -291,5 +286,10 @@ export const CONTACT_INFO = [
         icon: Phone,
         label: "Phone",
         value: "+33 6 98 92 68 13",
+    },
+    {
+        icon: Globe,
+        label: "Mobility",
+        value: "Ile-de-France, Lyon",
     }
 ]
