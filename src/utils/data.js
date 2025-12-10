@@ -26,6 +26,8 @@ import PROJECT_IMG4 from "../assets/images/project4.png"
 import PROJECT_IMG5 from "../assets/images/project5.png"
 import PROJECT_IMG6 from "../assets/images/project6.png"
 import PROJECT_IMG7 from "../assets/images/project7.png"
+import PROJECT_IMG8 from "../assets/images/project8.png"
+import PROJECT_IMG9 from "../assets/images/project9.png"
 
 export const SKILLS_CATEGORY = [
     {
@@ -95,7 +97,7 @@ export const TECH_STACK = [
 ];
 
 export const STATS = [
-    { number: "8+", label: "Web Development Projects" },
+    { number: "10+", label: "Web Development Projects" },
     { number: "2", label: "Year of Training" },
     { number: "10+", label: "Technologies Learned" },
     { number: "100%", label: "Training Completion Rate" },
@@ -146,44 +148,64 @@ export const PROJECTS = [
         featured: false,
         category: "Web App",
     },
-   {
-    id: 5,
-    title: "Color Scheme Generator",
-    description: "A web app that generates color palettes based on a selected color and mode. Users can copy hex codes to use in their designs.",
-    image: PROJECT_IMG5,
-    tags: ["HTML", "CSS", "JavaScript", "API"],
-    liveUrl: "https://color-scheme-master.netlify.app/",
-    githubUrl: "https://github.com/Elizbeh/color-scheme-master",
-    featured: false,
-    category: "Web App",
-},
-{
-    id: 6,
-    title: "Game of War",
-    description: "A web-based card game where players compete against the computer by drawing cards. Scores are tracked and the game announces round and overall winners.",
-    image: PROJECT_IMG6,
-    tags: ["HTML", "CSS", "JavaScript", "API"],
-    liveUrl: "https://your-netlify-link.netlify.app/",
-    githubUrl: "https://github.com/Elizbeh/game-of-war",
-    featured: false,
-    category: "Web App",
-},
-
     {
-    id: 7,
-    title: "Meme Picker",
-    description: "A web app that lets users select their current emotion and fetch a meme or GIF that matches it. Includes options to filter for animated GIFs only.",
-    image: PROJECT_IMG7,
-    tags: ["HTML", "CSS", "JavaScript",],
-    liveUrl: "https://meme-picker0.netlify.app/",
-    githubUrl: "https://github.com/Elizbeh/meme_picker",
-    featured: false,
-    category: "Web App",
-},
-
-
-
+        id: 5,
+        title: "Assembly Endgame",
+        description: "A React-based endgame project featuring interactive gameplay and confetti animations using React-Confetti.",
+        image: PROJECT_IMG5,
+        tags: ["React", "Vite", "React-Confetti"],
+        liveUrl: "https://assemblyendgame00.netlify.app/",
+        githubUrl: "https://github.com/Elizbeh/assembly_endgame",
+        featured: false,
+        category: "Web App",
+    },
+    {
+        id: 6,
+        title: "Tenzies",
+        description: "An interactive React-based game with fun challenges and scoring system. Highlights dynamic UI and state management.",
+        image: PROJECT_IMG6,
+        tags: ["React", "JavaScript", "CSS"],
+        liveUrl: "https://tenzies-eb.netlify.app/",
+        githubUrl: "https://github.com/Elizbeh/tezies-game",
+        featured: false,
+        category: "Web App",
+    },
+    
+    {
+        id: 7,
+        title: "Color Scheme Generator",
+        description: "A web app that generates color palettes based on a selected color and mode. Users can copy hex codes to use in their designs.",
+        image: PROJECT_IMG7,
+        tags: ["HTML", "CSS", "JavaScript", "API"],
+        liveUrl: "https://color-scheme-master.netlify.app/",
+        githubUrl: "https://github.com/Elizbeh/color-scheme-master",
+        featured: false,
+        category: "Web App",
+    },
+    {
+        id: 8,
+        title: "Game of War",
+        description: "A web-based card game where players compete against the computer by drawing cards. Scores are tracked and the game announces round and overall winners.",
+        image: PROJECT_IMG8,
+        tags: ["HTML", "CSS", "JavaScript", "API"],
+        liveUrl: "https://your-netlify-link.netlify.app/",
+        githubUrl: "https://github.com/Elizbeh/game-of-war",
+        featured: false,
+        category: "Web App",
+    },
+    {
+        id: 9,
+        title: "Meme Picker",
+        description: "A web app that lets users select their current emotion and fetch a meme or GIF that matches it. Includes options to filter for animated GIFs only.",
+        image: PROJECT_IMG9,
+        tags: ["HTML", "CSS", "JavaScript"],
+        liveUrl: "https://meme-picker0.netlify.app/",
+        githubUrl: "https://github.com/Elizbeh/meme_picker",
+        featured: false,
+        category: "Web App",
+    },
 ];
+
 
 
 export const JOURNEY_STEPS = [
