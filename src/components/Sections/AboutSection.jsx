@@ -4,6 +4,7 @@ import {
   useInView,
   useScroll,
   useTransform,
+  motion,
 } from "framer-motion";
 import { useTheme } from "../../context/ThemeContext";
 import { JOURNEY_STEPS, PASSIONS } from "../../utils/data";

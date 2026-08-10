@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AnimatePresence } from "framer-motion";
+import { motion, useScroll, AnimatePresence, scale } from "framer-motion";
 import { Code2, Sun, Moon, Menu, X } from "lucide-react";
 import { useTheme } from "../../context/ThemeContext";
 
