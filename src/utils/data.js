@@ -100,11 +100,11 @@ export const TECH_STACK = [
 ];
 
 export const STATS = [
-    { number: "10+", label: "Web Development Projects" },
-    { number: "2", label: "Year of Training" },
-    { number: "10+", label: "Technologies Learned" },
-    { number: "100%", label: "Training Completion Rate" },
-]
+  { number: "10+", label: "Web Development Projects" },
+  { number: "2+", label: "Years of Development Training" },
+  { number: "10+", label: "Technologies & Tools" },
+  { number: "1", label: "End-to-End Cloud Deployment" },
+];
 
 export const PROJECTS = [
     {

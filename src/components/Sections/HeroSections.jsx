@@ -206,7 +206,7 @@ export const HeroSections = () => {
             <motion.div initial="hidden" animate="visible" variants={imageVariants} className="flex justify-center relative">
               {/* Tech names above image */}
               <motion.div className="absolute -top-20 left-1/2 -translate-x-1/2 flex space-x-8">
-                {["React", "Node.js", "TypeScript", "MongoDB"].map((tech) => (
+                {["Node.js", "Docker", "AWS", "Terraform"].map((tech) => (
                   <span key={tech} className={`text-sm font-medium ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
                     {tech}
                   </span>
