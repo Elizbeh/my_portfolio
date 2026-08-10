@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import {
   easeOut,
-  motion,
   useInView,
   useScroll,
   useTransform,
@@ -123,14 +122,20 @@ const AboutSection = () => {
                   isDarkMode ? "text-gray-300" : "text-gray-700"
                 }`}
               >
-                I’m passionate about using technology to solve real problems and create digital experiences that are useful, enjoyable, and accessible. Through hands-on projects, I’ve honed my ability to turn ideas into practical solutions, whether working independently or collaborating with a team.
+                 I’m a Full-Stack Developer with a strong interest in backend development,
+                  cloud technologies, and DevOps. I enjoy building applications from the
+                  frontend to the backend, while also exploring how to containerize,
+                  automate, and deploy them reliably.
               </p>
               <p
                 className={`text-lg leading-relaxed mb-6 ${
                   isDarkMode ? "text-gray-400" : "text-gray-600"
                 }`}
               >
-               I thrive on learning, exploring new tools, and building meaningful, user-centered solutions that connect people and make a real impact. When I’m not coding, I enjoy experimenting with new frameworks and exploring the endless possibilities web technologies offer to create engaging digital experiences.
+                My recent work with Docker, CI/CD, Terraform, and AWS has allowed me to
+                extend my development skills into deployment and infrastructure. I’m
+                continuously learning and building hands-on projects to strengthen my
+                understanding of cloud and DevOps practices.
               </p>
 
               {/* What I Love Building */}
@@ -281,15 +286,15 @@ const AboutSection = () => {
                     className={`text-lg ${
                        isDarkMode ? "text-gray-400" : "text-gray-600" 
                     }`}
-                  >Ready to bring your ideas to life?
+                  > Interested in building reliable applications and cloud solutions?
                   </p>
                 
                 <motion.button
                     whileHover={{y: -2, scale: 1.05}}
                     whileTap={{scale: 0.98}}
-                    className="bg-purple-500 hover:bg-purple-60 text-white px-8 py-3 text-sm uppercas rounded-full tracking-wider font-medium transition-all duration-300"
+                    className="bg-purple-500 hover:bg-purple-600 text-white px-8 py-3 text-sm uppercase rounded-full tracking-wider font-medium transition-all duration-300"
                 >
-                    Let's Work Together
+                    Let's Connect
                 </motion.button>
                 </motion.div>
               </motion.div>

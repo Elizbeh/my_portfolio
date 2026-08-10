@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion, useScroll, useTransform } from "framer-motion";
+import { useScroll, useTransform } from "framer-motion";
 import { ArrowDown, Mail } from 'lucide-react';
 import { FiGithub, FiLinkedin } from 'react-icons/fi';
 import { useTheme } from '../../context/ThemeContext';
@@ -88,19 +88,19 @@ export const HeroSections = () => {
               </motion.div>
 
               <motion.div variants={textVariants} className={`text-sm uppercase tracking-widest mb-4 ${isDarkMode ? "text-gray-500" : "text-gray-600"}`}>
-                Full Stack Developer
+                Full-Stack Developer | Cloud & DevOps
               </motion.div>
 
               <motion.h1 variants={containerVariants} className="text-3xl md:text-5xl font-light mb-6 leading-tight">
                 <span>
-                  Bringing digital  <span className="text-purple-500 font-medium">experiences</span>
+                   Building reliable  <span className="text-purple-500 font-medium">systems</span>
                   <br />
-                  <span className={isDarkMode ? "text-white" : "text-gray-900"}>to life</span>
+                  <span className={isDarkMode ? "text-white" : "text-gray-900"}> from code to production</span>
                 </span>
               </motion.h1>
 
               <motion.p variants={itemsVariants} className={`text-base md:text-lg font-light leading-relaxed mb-8 max-w-xl mx-auto ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
-                I craft beautiful, functional web applications with modern technologies and thoughtful user experiences.
+                I build full-stack applications with a strong backend focus, while developing hands-on experience in deployment, containerization, CI/CD and modern DevOps practices.
               </motion.p>
 
               <motion.div variants={itemsVariants} className="flex flex-col space-y-4 items-center">
@@ -148,19 +148,19 @@ export const HeroSections = () => {
           <div className="hidden lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
             <motion.div initial="hidden" animate="visible" variants={containerVariants}>
               <motion.div variants={textVariants} className={`text-sm uppercase tracking-widest mb-6 ${isDarkMode ? "text-gray-500" : "text-gray-600"}`}>
-                Full Stack Developer
+                Full-Stack Developer | Cloud & DevOps
               </motion.div>
 
               <motion.h1 variants={itemsVariants} className="text-5xl md:text-7xl font-light mb-8 leading-tight">
                 <span>
-                  Building digital <span className="text-purple-500 font-medium">experiences</span>
+                  Building reliable <span className="text-purple-500 font-medium">systems</span>
                   <br />
-                  <span className={isDarkMode ? "text-white" : "text-gray-900"}>that matter</span>
+                  <span className={isDarkMode ? "text-white" : "text-gray-900"}>from code to production</span>
                 </span>
               </motion.h1>
 
               <motion.p variants={itemsVariants} className={`text-xl font-light leading-relaxed mb-12 max-w-lg ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
-                I craft beautiful, functional web applications with modern technologies and thoughtful user experiences.
+                I build full-stack applications with a strong backend focus, while developing hands-on experience in deployment, containerization, CI/CD and modern DevOps practices.
               </motion.p>
 
               <motion.div variants={itemsVariants} className="flex space-x-4 mb-8">
@@ -183,21 +183,21 @@ export const HeroSections = () => {
 
               <motion.div variants={itemsVariants} className="flex space-x-6 mb-10">
                 {SOCIAL_LINKS.map((social, i) => (
-  <motion.a
-    key={i}
-    href={social.url}
-    target="_blank"
-    rel="noopener noreferrer"
-    whileHover={{ y: -3, scale: 1.1 }}
-    className={`p-3 rounded-full transition-colors ${
-      isDarkMode
-        ? "text-gray-400 hover:text-white hover:bg-gray-800"
-        : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
-    }`}
-  >
-    <social.icon size={20} />
-  </motion.a>
-))}
+              <motion.a
+                key={i}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ y: -3, scale: 1.1 }}
+                className={`p-3 rounded-full transition-colors ${
+                  isDarkMode
+                    ? "text-gray-400 hover:text-white hover:bg-gray-800"
+                    : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
+                }`}
+              >
+                <social.icon size={20} />
+              </motion.a>
+            ))}
 
               </motion.div>
             </motion.div>
@@ -244,17 +244,17 @@ export const HeroSections = () => {
             <ArrowDown size={20} className={isDarkMode ? "text-gray-600" : "text-gray-400"} />
           </motion.div>
           <motion.div
-  initial={{ opacity: 0, y: 10 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, delay: 0.5 }}
-  className={`mt-6 flex justify-center space-x-6 ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}
->
-  {["React", "Node.js", "TypeScript", "MongoDB"].map((tech) => (
-    <span key={tech} className="text-sm font-medium">
-      {tech}
-    </span>
-  ))}
-</motion.div>
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className={`mt-6 flex justify-center space-x-6 ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}
+          >
+            {["React", "Node.js", "TypeScript", "MongoDB"].map((tech) => (
+              <span key={tech} className="text-sm font-medium">
+                {tech}
+              </span>
+            ))}
+          </motion.div>
 
         </div>
       </motion.section>

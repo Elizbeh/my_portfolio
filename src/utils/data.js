@@ -29,71 +29,74 @@ import PROJECT_IMG7 from "../assets/images/project7.png"
 import PROJECT_IMG8 from "../assets/images/project8.png"
 import PROJECT_IMG9 from "../assets/images/project9.png"
 
+
 export const SKILLS_CATEGORY = [
-    {
-        title: "Frontend",
-        icon: Code2,
-        description: "Crafting beautiful, responsive user interfaces",
-        skills: [
-            { name: "React", level: 80, color: "bg-purple-500" },
-            { name: "TypeScript", level: 60, color: "bg-blue-600" },
-            { name: "HTML", level: 90, color: "bg-green-800" },
-            { name: "Tailwind CSS", level: 80, color: "bg-cyan-500" },
-            { name: "Framer Motion", level: 50, color: "bg-pink-500" },
-        ],
-    },
-    {
-        title: "Backend",
-        icon: Server,
-        description: "Building robust server-side solutions",
-        skills: [
-            { name: "Node.js", level: 80, color: "bg-green-500" },
-            { name: "Express.js", level: 70, color: "bg-amber-700" },
-            { name: "Python", level: 50, color: "bg-yellow-500" },
-            { name: "Dart", level: 50, color: "bg-pink-500" },
-            { name: "REST APIS", level: 80, color: "bg-cyan-600" },
-        ],
-    },
-    {
-        title: "Database",
-        icon: Database,
-        description: "Managing and optimising data storage",
-        skills: [
-            { name: "MongoDB", level: 80, color: "bg-green-500" },
-            { name: "Mysql", level: 80, color: "bg-blue-700" },
-            { name: "Redis", level: 50, color: "bg-red-500" },
-            { name: "Firebase", level: 60, color: "bg-indigo-500" },
-            { name: "TiDB", level: 60, color: "bg-yellow-600" },
-        ],
-    },
-    {
-        title: "Devops",
-        icon: Cloud,
-        description: "Deploying and scaling applications",
-        skills: [
-            { name: "Docker", level: 70, color: "bg-blue-600" },
-            { name: "Git", level: 80, color: "bg-orange-700" },
-            { name: "CI/CD", level: 70, color: "bg-purple-500" },
-            { name: "Render", level: 80, color: "bg-indigo-500" },
-            { name: "TiDB", level: 50, color: "bg-yellow-900" },
-        ],
-    },
-]
+  {
+    title: "DevOps & Cloud",
+    icon: Cloud,
+    description: "Hands-on experience with application deployment, containerization, CI/CD and infrastructure automation",
+    skills: [
+      { name: "Docker", level: 70, color: "bg-blue-600" },
+      { name: "Docker Compose", level: 70, color: "bg-blue-500" },
+      { name: "GitHub Actions", level: 90, color: "bg-purple-500" },
+      { name: "Terraform", level: 60, color: "bg-violet-600" },
+      { name: "AWS", level: 60, color: "bg-orange-500" },
+    ],
+  },
+  {
+    title: "Backend",
+    icon: Server,
+    description: "Building REST APIs and server-side applications",
+    skills: [
+      { name: "Node.js", level: 80, color: "bg-green-500" },
+      { name: "Express.js", level: 80, color: "bg-amber-700" },
+      { name: "Python", level: 70, color: "bg-yellow-500" },
+      { name: "REST APIs", level: 80, color: "bg-cyan-600" },
+      { name: "JWT / Authentication", level: 70, color: "bg-purple-500" },
+    ],
+  },
+  {
+    title: "Databases",
+    icon: Database,
+    description: "Working with relational and NoSQL data storage",
+    skills: [
+      { name: "MySQL", level: 80, color: "bg-blue-700" },
+      { name: "MongoDB", level: 75, color: "bg-green-500" },
+      { name: "PostgreSQL", level: 60, color: "bg-blue-500" },
+      { name: "Firebase", level: 60, color: "bg-indigo-500" },
+      { name: "TiDB", level: 60, color: "bg-yellow-600" },
+    ],
+  },
+  {
+    title: "Frontend",
+    icon: Code2,
+    description: "Building responsive interfaces with modern web technologies",
+    skills: [
+      { name: "React", level: 80, color: "bg-purple-500" },
+      { name: "TypeScript", level: 60, color: "bg-blue-600" },
+      { name: "HTML", level: 90, color: "bg-green-800" },
+      { name: "CSS", level: 90, color: "bg-cyan-500" },
+      { name: "JavaScript", level: 80, color: "bg-yellow-500" },
+    ],
+  },
+];
 
 export const TECH_STACK = [
-    "Javascript",
-    "HTML5",
-    "CSS3",
-    "Sass",
-    "Vite",
-    "Jest",
-    "Cypress",
-    "Figma",
-    "canva",
-    "Slack",
-    "Trello",
-    "Lucidchart",
-
+  "JavaScript",
+  "React",
+  "Node.js",
+  "Python",
+  "MySQL",
+  "Docker",
+  "Docker Compose",
+  "Git",
+  "GitHub Actions",
+  "Terraform",
+  "AWS",
+  "Linux",
+  "GitHub Container Registry",
+  "Vite",
+  "Jest",
 ];
 
 export const STATS = [
@@ -107,14 +110,25 @@ export const PROJECTS = [
     {
         id: 1,
         title: "Savorly",
-        description: "Full-stack recipe sharing app using React, Node.js, MySQL; deployed on GitHub Pages, Render, and TiDB Cloud.",
+        description:
+            "Full-stack recipe-sharing application with a React frontend and Node.js/MySQL backend. Recently extended with Docker containerization, GitHub Actions CI/CD, Terraform Infrastructure as Code and AWS deployment.",
         image: PROJECT_IMG1,
-        tags: ["React", "Node.js", "MySQL"],
-        liveUrl: "https://elizbeh.github.io/savorly-frontend",
+        tags: [
+            "React",
+            "Node.js",
+            "MySQL",
+            "Docker",
+            "GitHub Actions",
+            "CI/CD",
+            "Terraform",
+            "AWS EC2",
+            "S3",
+        ],
+        liveUrl: "https://Elizbeh.github.io/savorly-frontend",
         githubUrl: "https://github.com/Elizbeh/Savorly",
         featured: true,
-        category: "Web App",
-    },
+        category: "Full-Stack / DevOps",
+        },
     {
         id: 2,
         title: "HabitWise",
@@ -209,62 +223,75 @@ export const PROJECTS = [
 
 
 export const JOURNEY_STEPS = [
-    {
-        year: "2009 - 2014",
-        title: "Bachelor of Arts (French)",
-        Company: "Ambrose Alli University, Ekpoma, Nigeria",
-        description: "Earned a BA in French, developing strong communication, research, and analytical skills.",
-        icon: GraduationCap,
-        color: "bg-blue-500"
-    },
-    {
+  {
+    year: "2009 - 2014",
+    title: "Bachelor of Arts (French)",
+    Company: "Ambrose Alli University, Ekpoma, Nigeria",
+    description:
+      "Earned a BA in French, developing strong communication, research and analytical skills.",
+    icon: GraduationCap,
+    color: "bg-blue-500",
+  },
+  {
     year: "2015 - 2016",
     title: "French Teacher – National Youth Service Corps",
     Company: "Abraka, Delta, Nigeria",
-    description: "Taught French language classes, developing strong communication, leadership, and adaptability skills in a dynamic environment.",
+    description:
+      "Taught French language classes, developing communication, leadership and adaptability skills.",
     icon: Briefcase,
-    color: "bg-green-500"
-    },
-
-    {
-        year: "2022 - 2024",
-        title: "Full-Stack Developer Training",
-        Company: "Holberton School Paris, France",
-        description: "Completed two-year program: Year 1 in Computer Science Fundamentals, Year 2 in Full-Stack Development",
-        icon: Rocket,
-        color: "bg-blue-700"
-    },
-    {
+    color: "bg-green-500",
+  },
+  {
+    year: "2022 - 2024",
+    title: "Full-Stack Developer Training",
+    Company: "Holberton School Paris, France",
+    description:
+      "Completed a two-year project-based program covering computer science fundamentals and full-stack web development, with hands-on experience in frontend, backend, databases and APIs.",
+    icon: Rocket,
+    color: "bg-blue-700",
+  },
+  {
     year: "2025",
-    title: "RNCP Niveau 6 – Concepteur Développeur d’Applications",
-    Company: "France Compétences",
-    description: "Completed Holberton full-stack specialization and prepared for the official RNCP state certification exam.",
+    title: "Concepteur Développeur d’Applications – RNCP Niveau 6",
+    Company: "Holberton School / France Compétences",
+    description:
+      "Completed the full-stack development program and obtained the RNCP Level 6 qualification in application development.",
     icon: Award,
-    color: "bg-blue-500"
-}
-
+    color: "bg-purple-500",
+  },
+  {
+    year: "2026 - 2027",
+    title: "Administrateur Système DevOps – RNCP Niveau 6",
+    Company: "Ironhack – Formation en alternance",
+    description:
+      "Specializing in DevOps and Cloud Computing, building on my full-stack and backend experience with hands-on work in Docker, CI/CD, Terraform, Linux and AWS.",
+    icon: Cloud,
+    color: "bg-orange-500",
+  },
 ];
 
 
 
 
 export const PASSIONS = [
-    {
-    icon: Heart,
-    title: "User Experience",
-    description: "Creating intuitive and user-friendly interfaces",
-    },
-
-    {
-        icon: Coffee,
-        title: "Problem Solving",
-        description: "Eager to tackle challenges with thoughtful and practical solutions",
-    },
-    {
-        icon: BookOpen,
-        title: "Continuous Learning",
-        description: "Committed to growing skills by exploring new technologies and best practices",
-    },
+  {
+    icon: Code2,
+    title: "Full-Stack Development",
+    description:
+      "Building responsive applications across the frontend and backend, with a growing focus on backend development and APIs",
+  },
+  {
+    icon: Coffee,
+    title: "Problem Solving",
+    description:
+      "Approaching technical challenges with practical solutions, from application development to deployment",
+  },
+  {
+    icon: Cloud,
+    title: "Cloud & DevOps",
+    description:
+      "Exploring containerization, CI/CD, infrastructure as code and cloud deployment to make applications easier to deliver and maintain",
+  },
 ];
 
 
