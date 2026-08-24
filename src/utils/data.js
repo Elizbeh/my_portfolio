@@ -142,13 +142,12 @@ export const PROJECTS = [
         category: "Mobile App",
     },
     {
-        id: 3,
-        title: "Python Health Monitor",
-        category: "DevOps / Cloud",
-        description:
-          "A containerized Python application that monitors HTTP/HTTPS endpoint availability. Built to demonstrate Docker, CI/CD, GitHub Container Registry and Infrastructure as Code with Terraform on Azure.",
-        image: PROJECT_IMG03,
-        technologies: [
+      id: 3,
+      title: "Python Health Monitor",
+      description:
+          "Containerized Python application that monitors HTTP/HTTPS endpoint availability. Built with Docker, GitHub Actions CI/CD, GHCR and Terraform for Infrastructure as Code with Azure.",
+      image: PROJECT_IMG03,
+      tags: [
           "Python",
           "Docker",
           "GitHub Actions",
@@ -157,11 +156,12 @@ export const PROJECTS = [
           "GHCR",
           "Linux",
           "pytest"
-        ],
-        github: "https://github.com/Elizbeh/python-health-monitor",
-        demo: null,
-        featured: true
-      },
+      ],
+      liveUrl: "#",
+      githubUrl: "https://github.com/Elizbeh/python-health-monitor",
+      featured: true,
+      category: "DevOps / Cloud",
+  },
     {
         id: 4,
         title: "Gabbeth Interiors",
@@ -208,7 +208,7 @@ export const PROJECTS = [
     },
     
     {
-        id: 7,
+        id: 8,
         title: "Color Scheme Generator",
         description: "A web app that generates color palettes based on a selected color and mode. Users can copy hex codes to use in their designs.",
         image: PROJECT_IMG7,
@@ -219,7 +219,7 @@ export const PROJECTS = [
         category: "Web App",
     },
     {
-        id: 8,
+        id: 9,
         title: "Game of War",
         description: "A web-based card game where players compete against the computer by drawing cards. Scores are tracked and the game announces round and overall winners.",
         image: PROJECT_IMG8,
@@ -230,7 +230,7 @@ export const PROJECTS = [
         category: "Web App",
     },
     {
-        id: 9,
+        id: 10,
         title: "Meme Picker",
         description: "A web app that lets users select their current emotion and fetch a meme or GIF that matches it. Includes options to filter for animated GIFs only.",
         image: PROJECT_IMG9,
