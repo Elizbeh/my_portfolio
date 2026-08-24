@@ -22,6 +22,7 @@ import { FiGithub, FiLinkedin } from "react-icons/fi";
 import PROJECT_IMG1 from "../assets/images/project1.png"
 import PROJECT_IMG2 from "../assets/images/project2.png"
 import PROJECT_IMG3 from "../assets/images/project3.png"
+import PROJECT_IMG03 from "../assets/images/project03.png"
 import PROJECT_IMG4 from "../assets/images/project4.png"
 import PROJECT_IMG5 from "../assets/images/project5.png"
 import PROJECT_IMG6 from "../assets/images/project6.png"
@@ -50,7 +51,7 @@ export const SKILLS_CATEGORY = [
     skills: [
       { name: "Node.js", level: 80, color: "bg-green-500" },
       { name: "Express.js", level: 80, color: "bg-amber-700" },
-      { name: "Python", level: 70, color: "bg-yellow-500" },
+      { name: "Python", level: 80, color: "bg-yellow-500" },
       { name: "REST APIs", level: 80, color: "bg-cyan-600" },
       { name: "JWT / Authentication", level: 70, color: "bg-purple-500" },
     ],
@@ -142,6 +143,27 @@ export const PROJECTS = [
     },
     {
         id: 3,
+        title: "Python Health Monitor",
+        category: "DevOps / Cloud",
+        description:
+          "A containerized Python application that monitors HTTP/HTTPS endpoint availability. Built to demonstrate Docker, CI/CD, GitHub Container Registry and Infrastructure as Code with Terraform on Azure.",
+        image: PROJECT_IMG03,
+        technologies: [
+          "Python",
+          "Docker",
+          "GitHub Actions",
+          "Terraform",
+          "Azure",
+          "GHCR",
+          "Linux",
+          "pytest"
+        ],
+        github: "https://github.com/Elizbeh/python-health-monitor",
+        demo: null,
+        featured: true
+      },
+    {
+        id: 4,
         title: "Gabbeth Interiors",
         description: "E-commerce platform for furniture sales with Stripe payment integration and Cloudinary for image management.",
         image: PROJECT_IMG3,
@@ -152,7 +174,7 @@ export const PROJECTS = [
         category: "Web App",
     },
     {
-        id: 4,
+        id: 5,
         title: "Portfolio Website",
         description: "Personal portfolio showcasing projects, skills, and development journey.",
         image: PROJECT_IMG4,
@@ -163,7 +185,7 @@ export const PROJECTS = [
         category: "Web App",
     },
     {
-        id: 5,
+        id: 6,
         title: "Assembly Endgame",
         description: "A React-based endgame project featuring interactive gameplay and confetti animations using React-Confetti.",
         image: PROJECT_IMG5,
@@ -174,7 +196,7 @@ export const PROJECTS = [
         category: "Web App",
     },
     {
-        id: 6,
+        id: 7,
         title: "Tenzies",
         description: "An interactive React-based game with fun challenges and scoring system. Highlights dynamic UI and state management.",
         image: PROJECT_IMG6,
