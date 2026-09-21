@@ -131,18 +131,7 @@ export const PROJECTS = [
         category: "Full-Stack / DevOps",
         },
     {
-        id: 2,
-        title: "HabitWise",
-        description: "Mobile app for personal and collective goal tracking with real-time sync via Firebase, built with Flutter and Provider.",
-        image: PROJECT_IMG2,
-        tags: ["Flutter", "Firebase", "Dart"],
-        liveUrl: "https://1drv.ms/v/c/d95f96af380c24d0/EdAkDDivll8ggNnFdh4AAAABI0S_fWNxg4Jb-EiH6XmDKQ?e=vcZ5Ds",
-        githubUrl: "https://github.com/Elizbeh/habitwise",
-        featured: false,
-        category: "Mobile App",
-    },
-    {
-      id: 3,
+      id: 2,
       title: "Python Health Monitor",
       description:
           "Containerized Python application that monitors HTTP/HTTPS endpoint availability. Built with Docker, GitHub Actions CI/CD, GHCR and Terraform for Infrastructure as Code with Azure.",
@@ -162,6 +151,18 @@ export const PROJECTS = [
       featured: true,
       category: "DevOps / Cloud",
   },
+    {
+        id: 3,
+        title: "HabitWise",
+        description: "Mobile app for personal and collective goal tracking with real-time sync via Firebase, built with Flutter and Provider.",
+        image: PROJECT_IMG2,
+        tags: ["Flutter", "Firebase", "Dart"],
+        liveUrl: "https://1drv.ms/v/c/d95f96af380c24d0/EdAkDDivll8ggNnFdh4AAAABI0S_fWNxg4Jb-EiH6XmDKQ?e=vcZ5Ds",
+        githubUrl: "https://github.com/Elizbeh/habitwise",
+        featured: false,
+        category: "Mobile App",
+    },
+    
     {
         id: 4,
         title: "Gabbeth Interiors",
